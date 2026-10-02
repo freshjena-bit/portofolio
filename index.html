@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GadaLuBau | SonicNetwork</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080a12;color:#e0e0e0;font-family:'JetBrains Mono',monospace;transition:.3s;padding:20px}
+.container{max-width:900px;margin:0 auto}
+.header{text-align:center;padding:40px 0 30px;border-bottom:1px solid #1a1c2a}
+.header h1{font-family:'Space Grotesk',sans-serif;font-size:52px;color:#00ffaa;text-shadow:0 0 20px rgba(0,255,170,0.3)}
+.header .team{font-size:22px;color:#00c8ff;margin-top:8px;font-weight:700}
+.header .sub{font-size:14px;color:#8888aa;letter-spacing:4px;margin-top:10px}
+.header .meta{font-size:12px;color:#555570;margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:30px 0}
+.stat{border:1px solid #2a2d44;background:#121424;border-radius:14px;padding:18px;text-align:center;transition:.3s}
+.stat:hover{transform:translateY(-3px)}
+.stat.green{border-color:#00ffaa} .stat.blue{border-color:#00c8ff} .stat.orange{border-color:#ff6a2a} .stat.pink{border-color:#ff3a8a}
+.stat .label{font-size:11px;color:#77779a} .stat .value{font-size:22px;font-weight:700;margin-top:8px;color:#fff}
+.stat.green .label{color:#00ffaa} .stat.blue .label{color:#00c8ff} .stat.orange .label{color:#ff6a2a} .stat.pink .label{color:#ff3a8a}
+.section{margin:35px 0}
+.section h2{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:16px}
+.section h2.god{color:#ff3a4a} .section h2.gov{color:#ff9a2a} .section h2.mass{color:#2ac8ff} .section h2.edu{color:#b07aff}
+.list{list-style:none;padding-left:10px}
+.list li{padding:8px 0 8px 20px;position:relative;color:#c0c0d0;font-size:14px}
+.list li:before{content:'•';position:absolute;left:0;color:#555570}
+.god-list li{color:#ff8a8a} .gov-list li{color:#ffcc88} .gov-list li:nth-child(3),.gov-list li:nth-child(4){color:#a0c8ff}
+.mass-list li{color:#7ae8ff} .edu-list li{color:#c8a8ff}
+.badge{display:inline-block;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:6px}
+.badge.private{background:#ff3a4a22;color:#ff6a6a;border:1px solid #ff3a4a44}
+.breakdown{border:1px solid #00ffaa33;background:linear-gradient(135deg,#121424,#10121f);border-radius:12px;padding:20px;margin-top:30px}
+.breakdown h3{color:#00ffaa;font-size:14px;margin-bottom:12px}
+.breakdown p{font-size:13px;color:#9999bb;line-height:1.8}
+.footer{text-align:center;padding:40px 0 20px;color:#44445a;font-size:11px;border-top:1px solid #1a1c2a;margin-top:40px}
+.toggle{position:fixed;top:20px;right:20px;z-index:999;background:#121424;border:1px solid #2a2d44;color:#00ffaa;padding:8px 14px;border-radius:20px;cursor:pointer;font-size:12px}
+.light-mode{background:#f5f6fb !important;color:#1a1a2a !important}
+.light-mode .header,.light-mode .footer{border-color:#e0e0ea !important}
+.light-mode .stat{background:#ffffff !important} .light-mode .stat .value{color:#1a1a2a !important}
+.light-mode .list li{color:#33334a !important} .light-mode .breakdown{background:#ffffff !important} .light-mode .breakdown p{color:#44445a !important}
+.light-mode .toggle{background:#fff;border-color:#ddd;color:#00aa66}
+@media(max-width:600px){.header h1{font-size:36px} .stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body id="body">
+<button class="toggle" onclick="document.getElementById('body').classList.toggle('light-mode')">🌙 / ☀️ MODE</button>
+<div class="container">
+  <div class="header">
+    <h1>GadaLuBau</h1>
+    <div class="team">SonicNetwork</div>
+    <div class="sub">S O L O &nbsp; P O R T F O L I O</div>
+    <div class="meta">zone-sam1337.com | 1,942 Reports | 48 Special | Legend</div>
+  </div>
+  <div class="stats">
+    <div class="stat green"><div class="label">TOTAL REPORTS</div><div class="value">1,942</div></div>
+    <div class="stat blue"><div class="label">TOTAL VALUE</div><div class="value">44,690 PTS</div></div>
+    <div class="stat orange"><div class="label">SPECIAL</div><div class="value">48 DOMAINS</div></div>
+    <div class="stat pink"><div class="label">STATUS</div><div class="value">LEGEND</div></div>
+  </div>
+  <div class="section">
+    <h2 class="god">◆ GOD TIER</h2>
+    <ul class="list god-list"><li>sma.nasa.gov - NASA (GOD Tier) - 1500 pts - SOLO</li></ul>
+  </div>
+  <div class="section">
+    <h2 class="gov">◆ GOV WAR - SUPERPOWER</h2>
+    <ul class="list gov-list">
+      <li>lysianka-otg.gov.ua - Ukraine Gov <span class="badge private">Private 500 pts</span></li>
+      <li>wcg-dev.usda.gov - US Gov <span class="badge private">Private 400 pts</span></li>
+      <li>librariesonline.stoke.gov.uk - UK Gov - 300 pts</li>
+      <li>dailynews.gov.bw - Botswana Gov - 250 pts</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2 class="mass">◆ MASS GOV PWN - 18x gov.kg</h2>
+    <ul class="list mass-list">
+      <li>18x Kyrgyzstan Gov - 3600 pts SOLO</li>
+      <li style="color:#77779a">aksuu.gov.kg, zhumgal-ao.gov.kg, at-bashy.gov.kg + 15 more</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2 class="edu">◆ EDU & GOV ID</h2>
+    <ul class="list edu-list">
+      <li>iisdeamicis-rovigo.edu.it - Italy - 80 pts</li>
+      <li>pdpu.edu.ua / udpu.edu.ua - Ukraine - 160 pts</li>
+      <li>hocnghehanoi.edu.vn + prs.edu.in + ftp.edu.vn</li>
+      <li>jdih.wantannas.go.id + postel.go.id - Gov ID</li>
+    </ul>
+  </div>
+  <div class="breakdown">
+    <h3>STATS BREAKDOWN</h3>
+    <p><span style="color:#00ffaa">Special 48 : 7,610 pts (17%)</span><br>
+    Home 1,814 : 36,280 pts (81%)<br>
+    Other 80 : 800 pts (2%)<br><br>
+    Solo run under SonicNetwork - All proofs verified on zone-sam1337.com<br>
+    GadaLuBau | SonicNetwork | SOLO</p>
+  </div>
+  <div class="footer">
+    Solo Legend - No Team - All Proofs Verified<br>
+    zone-sam1337.com/archive - Search: GadaLuBau<br><br>
+    © 2026 GadaLuBau - SonicNetwork
+  </div>
+</div>
+</body>
+</html>
